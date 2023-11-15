@@ -7,7 +7,7 @@ def lire_urls(fichier):
     return [url.strip() for url in urls]
 
 def lancer_dumper(url):
-    cmd = f"py dumper.py --url {url}"
+    cmd = f"python3 dumper.py --url {url}"
     subprocess.run(cmd, shell=True, check=True)
 
 def ajouter_a_history(url):
